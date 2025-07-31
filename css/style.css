@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  /*font-family: 'Segoe UI', sans-serif;*/
   background-color: #fffdfc;
   color: #4a4a4a;
   line-height: 1.7;
@@ -108,6 +108,7 @@ p, li {
 
 .hero-text {
   position: absolute;
+   font-family: 'Great Vibes', cursive;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -141,6 +142,51 @@ p, li {
   flex: 1;
   max-width: 100%;
   border-radius: 8px;
+}
+
+
+/*our story */
+.our-story {
+  padding: 2rem;
+  /*background-color: #fff; /* optional */*/
+}
+
+.our-story-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap; /* ensures it stacks on smaller screens */
+}
+
+.our-story .text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.our-story .text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.our-story .text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.our-story .image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.our-story .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Gallery Grid */
@@ -385,3 +431,44 @@ footer a {
       font-weight: bold;
       font-size: 1.2rem;
     }
+
+    /*  .desc-text {
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', sans-serif;
+  }*/
+  .desc-text {
+  font-size: 24px;        /* Change text size */
+  color: #444;            /* Customize text color */
+  font-family: 'Georgia', serif;  /* Choose a font */
+  margin-bottom: 10px;
+}
+
+/* Names - elegant script */
+.wedding-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 56px;
+  color: #806948;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.wedding-sub-name-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 56px;
+  color: #4B3A2F;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Supporting titles or dates */
+.wedding-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  /*color: #666;*/
+   color: white;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
