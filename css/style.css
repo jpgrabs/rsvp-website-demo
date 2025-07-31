@@ -509,3 +509,115 @@ footer a {
   letter-spacing: 0.5px;
 }
 
+/* Section styling */
+.dress-code {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #5a6a98;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 0.5rem auto;
+  background: #b0b0c0;
+}
+
+/* Flexbox layout for 2 columns */
+.dress-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each box */
+.dress-box {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+/* Headings */
+.dress-box h3 {
+  font-size: 1.6rem;
+  color: #5a6a98;
+  margin-bottom: 0.5rem;
+}
+
+/* Attire images */
+.attire-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.attire-images img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Color circle */
+.color-circle {
+  width: 160px;
+  height: 160px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  margin: 1rem auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.color-label {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #111;
+}
+
+/* Text */
+.dress-box p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.dress-box strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive stack */
+@media (max-width: 768px) {
+  .dress-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.attire-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.attire-images img {
+  width: 240px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
