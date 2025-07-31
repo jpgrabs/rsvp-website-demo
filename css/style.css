@@ -20,12 +20,20 @@ body {
 }
 
 /* Typography */
-h1, h2 {
-  color: #b94e4e;
+h1 {
+  color: #ffedb6;
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
 }
+h2 {
+  color: #806948;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 
 p, li {
   font-size: 1rem;
@@ -37,7 +45,7 @@ p, li {
 
 /* Navbar */
 .navbar {
-  background-color: #b94e4e;
+  background-color: #806948;
   color: white;
   position: sticky;
   top: 0;
@@ -176,7 +184,7 @@ p, li {
 
 .btn {
   display: inline-block;
-  background-color: #b94e4e;
+  background-color: #806948;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -198,7 +206,7 @@ footer {
 }
 
 footer a {
-  color: #b94e4e;
+  color: #806948;
   text-decoration: none;
 }
 
@@ -236,7 +244,7 @@ footer a {
   right: 30px;
   padding: 12px 16px;
   border: none;
-  background-color: #b94e4e;
+  background-color: #806948;
   color: white;
   border-radius: 50%;
   font-size: 20px;
@@ -259,7 +267,7 @@ footer a {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #b94e4e;
+    background-color: #806948;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -305,6 +313,19 @@ footer a {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Medium screens: 2 images per row */
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens: 1 image per row */
+@media (max-width: 480px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 /* Responsive */
 @media (max-width: 992px) {
   .photo-gallery {
