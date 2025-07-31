@@ -133,7 +133,7 @@ p, li {
 }
 @media (max-width: 768px) {
   .banner-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .banner-subtitle {
     font-size: 1rem;
