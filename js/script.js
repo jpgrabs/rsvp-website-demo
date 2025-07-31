@@ -37,3 +37,18 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// FAQ
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const icon = item.querySelector('.toggle-icon');
+
+    if (!question.classList.contains('disabled')) {
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+        icon.textContent = item.classList.contains('active') ? '−' : '+';
+      });
+    }
+  });
