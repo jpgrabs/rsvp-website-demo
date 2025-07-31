@@ -94,6 +94,52 @@ p, li {
   cursor: pointer;
 }
 
+/*Banner*/
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px; /* optional limit */
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   position: relative;
