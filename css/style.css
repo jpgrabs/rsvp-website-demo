@@ -405,29 +405,20 @@ footer a {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Medium screens: 2 images per row */
-@media (max-width: 768px) {
+/* Tablet: 2 per row */
+@media (min-width: 576px) {
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* Small screens: 1 image per row */
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .photo-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Responsive */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .photo-gallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 576px) {
-  .photo-gallery {
-    column-count: 1;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
   /*FAQ style*/
